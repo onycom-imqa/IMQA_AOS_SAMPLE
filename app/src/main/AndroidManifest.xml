@@ -29,6 +29,7 @@
         <activity android:name=".MpmActivity" android:theme="@style/DefaultActivityTheme"></activity>
         <activity android:name=".CrashActivity" android:theme="@style/DefaultActivityTheme"></activity>
         <activity android:name=".WebviewActivity" android:theme="@style/DefaultActivityTheme"></activity>
+        <activity android:name=".ConfigActivity" android:theme="@style/DefaultActivityTheme"></activity>
 
     </application>
 

@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#383838">
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -33,7 +35,7 @@
             android:id="@+id/crashBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/btn_grp_02_ac"
+            android:src="@drawable/btn_grp_02"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:layout_weight="1"
@@ -64,7 +66,7 @@
             android:id="@+id/configBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/btn_grp_04"
+            android:src="@drawable/btn_grp_04_ac"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:layout_weight="1"
@@ -80,96 +82,77 @@
 
     </LinearLayout>
 
-
-
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:background="#4D2D9C"
-        android:weightSum="6"
-        android:paddingTop="30px"
-        android:paddingBottom="30px"
-        >
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <ImageButton
-            android:id="@+id/crashMakeBtn"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/btn_dtl_03"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:layout_weight="3.5"
-            android:background="#693ED4"
-            android:layout_marginLeft="30px"
-            android:layout_marginRight="10px"
-            ></ImageButton>
+            android:textColor="#80ffffff"
+            android:text="MPM SERVER URL"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/collectorServerUrl"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#80ffffff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <ImageButton
-            android:id="@+id/anrMakeBtn"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/btn_dtl_04_ac"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:layout_weight="3.5"
-            android:background="#693ED4"
-            android:layout_marginLeft="10px"
-            android:layout_marginRight="30px"
-            ></ImageButton>
+            android:text="CRASH SERVER URL"
+            android:textColor="#80ffffff"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/crashCollectorServerUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="#80ffffff"/>
 
     </LinearLayout>
-
-
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity ="center"
-        android:fillViewport="true"
-        android:layout_marginTop="0dp"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/crash1"
-                android:adjustViewBounds="true"></ImageView>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/crash2"
-                android:adjustViewBounds="true"></ImageView>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/crash3"
-                android:adjustViewBounds="true"></ImageView>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/crash4"
-                android:adjustViewBounds="true"></ImageView>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/crash5"
-                android:adjustViewBounds="true"></ImageView>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/crash6"
-                android:adjustViewBounds="true"></ImageView>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/crash7"
-                android:adjustViewBounds="true"></ImageView>
-        </LinearLayout>
+        android:padding="20dp">
 
-    </ScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROJECT KEY"
+            android:textColor="#80ffffff"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/projectKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="#80ffffff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/configSaveBtn"
+            android:layout_height="40dp"
+            android:background="#693ED4"
+            android:text="Save"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
 
 </LinearLayout>

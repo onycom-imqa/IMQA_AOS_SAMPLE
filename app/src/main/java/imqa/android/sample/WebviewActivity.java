@@ -22,7 +22,17 @@ public class WebviewActivity extends AppCompatActivity {
             startActivity(new Intent(WebviewActivity.this, WebviewActivity.class));
         });
 
+        findViewById(R.id.configBtn).setOnClickListener(view -> {
+            startActivity(new Intent(WebviewActivity.this, ConfigActivity.class));
+        });
+
         WebView wv = findViewById(R.id.webview);
+
+
+        wv.getSettings().setJavaScriptEnabled(true); // Javascript Enable
+        io.imqa.mpm.network.webview.WebviewInterface imqaJavascript = new
+                io.imqa.mpm.network.webview.WebviewInterface();
+        wv.addJavascriptInterface(imqaJavascript, "ImqaBridge");
         wv.loadUrl("https://imqa.io");
 
     }

@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    compileSdk 32
 
     defaultConfig {
         applicationId "imqa.android.sample"
@@ -34,4 +34,25 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'io.imqa:imqa-core:2.24.1.r'
+    implementation 'io.imqa:imqa-mpm-client:2.24.3.a.i'
+    implementation 'io.imqa:imqa-crash-client:2.24.3.e'
+
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+
+}
+
+
+io.imqa.IMQAPlugin imqaPlugin = new io.imqa.IMQAPlugin()
+imqaPlugin.init(project)
+new io.imqa.injector.GJavacAction(project.name).setConfiguration(project)
+android.applicationVariants.all { variant ->
+    variant.javaCompile.doLast { task ->
+        new io.imqa.injector.CompileAction(
+                io.imqa.injector.util.BuildOption.BUILD_LOCATION_TYPE.javacClasses,
+                project.name,
+                io.imqa.injector.GJavacAction.convertBuildType(variant.getBuildType()),
+                io.imqa.injector.GJavacAction.makeFlavor("imqa", variant)
+        ).execute(task)
+    }
 }

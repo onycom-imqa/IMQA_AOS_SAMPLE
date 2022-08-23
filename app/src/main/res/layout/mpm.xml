@@ -6,30 +6,120 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+<!--    <HorizontalScrollView-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="#693ED4"
+            android:weightSum="4"
+            >
+
+            <ImageButton
+                android:id="@+id/mpmBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_grp_01_ac"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                android:background="#693ED4"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                ></ImageButton>
+
+            <ImageButton
+                android:id="@+id/crashBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_grp_02"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                android:background="#693ED4"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                ></ImageButton>
+
+            <ImageButton
+                android:id="@+id/webviewBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_grp_03"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                android:layout_margin="5px"
+                android:background="#693ED4"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                ></ImageButton>
+
+            <ImageButton
+                android:id="@+id/configBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_grp_04"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                android:layout_margin="5px"
+                android:background="#693ED4"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                ></ImageButton>
+
+
+
+        </LinearLayout>
+<!--    </HorizontalScrollView>-->
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="200px"
+        android:layout_height="wrap_content"
         android:gravity="center"
+        android:background="#4D2D9C"
+        android:weightSum="6"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
         >
 
-        <Button
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:id="@+id/mpmBtn"
-            android:layout_width="300px"
-            android:layout_height="fill_parent"
-            android:text="MPM"></Button>
-        <Button
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:id="@+id/crashBtn"
-            android:layout_width="300px"
-            android:layout_height="fill_parent"
-            android:text="Crash"></Button>
-        <Button
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:id="@+id/webviewBtn"
-            android:layout_width="300px"
-            android:layout_height="fill_parent"
-            android:text="webview"></Button>
+        <ImageButton
+            android:id="@+id/mpmNetworkBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_dtl_01_ac"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_weight="3.5"
+            android:background="#693ED4"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="10px"
+
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/mpmSlowActivityBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_dtl_02"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_weight="3.5"
+            android:background="#693ED4"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="30px"
+            ></ImageButton>
 
     </LinearLayout>
 
