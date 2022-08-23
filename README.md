@@ -17,7 +17,10 @@ IMQA에 로그인하여 프로젝트를 생성해주세요
 
 프로젝트를 생성 후 발급받은 `Project Key`를 이용하여 SDK 연동을 진행합니다
 
+[프로젝트 키 확인하기](https://imqa-onycom.gitbook.io/imqa-guide/installation/imqa/project-key#project-key-1)
+
 [<img src="https://842389420-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzFyCopc6yAp3UcEYW6la%2Fuploads%2FZCGQMpp55OSw14VeJCBG%2FUntitled.png?alt=media&token=c635d854-7d83-48cc-bf87-56d52924ac7a" width="800"/>](image.png)
+
 
 ## IMQA Sample 앱을 이용하여 서비스 연동하기
 
