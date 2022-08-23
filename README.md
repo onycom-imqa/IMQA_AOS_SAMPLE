@@ -115,6 +115,7 @@ IMQA는 성능 데이터를 수집후 수집 주기에 따라 데이터를 전�
 [<img src="https://imqa.io/theme/responsive_onycom/include/img/aos_sample_01.png" width="250"/>](image.png)
 
 | Make Network : 네트워크 응답을 생성합니다
+
 | Show Slow Activity : 기본적으로 메뉴 버튼을 누르면 화면 로딩시간이 측정되나, `Show Slow Activity`를 클릭하면 강제로 화면을 늦게 로딩시킵니다. 화면을 늦게 로딩시키는 기능이기 때문에 `Show Slow Activity` 기능을 누르면 약 5초동안 화면 로딩이 되면서 이벤트가 동작하지 않습니다
 
 `Mpm Activity`를 통해 수집된 데이터는 `서비스 콘솔`을 통해 확인할 수 있으며
@@ -130,6 +131,7 @@ https://imqa-onycom.gitbook.io/imqa-guide/user-guide/mpm
 
 
 | Make Crash : Crash를 발생시킵니다. 앱이 꺼집니다
+
 | Show Slow Activity : Anr(Application Not Responding)을 발생시킵니다. Anr이 발생하는 15초동안 아무런 이벤트가 입력되지 않습니다
 
 
