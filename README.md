@@ -8,16 +8,16 @@ IMQA를 사용하기 앞서 Android SDK 연동된 샘플 앱으로 연동 샘플
 ## IMQA 시작하기
 IMQA에 회원가입/로그인을 진행하시기 바랍니다
 
-[IMQA 시작하기](https://imqa-onycom.gitbook.io/imqa-guide/installation/imqa)
+[IMQA 시작하기](https://docs.imqa.io/imqa-guide/installation/imqa)
 
 ### IMQA 프로젝트 생성
 IMQA에 로그인하여 프로젝트를 생성해주세요
 
-[IMQA Lite 프로젝트 시작하기](https://imqa-onycom.gitbook.io/imqa-guide/installation/imqa/project-lite)
+[IMQA Lite 프로젝트 시작하기](https://docs.imqa.io/imqa-guide/installation/imqa/project-lite)
 
 프로젝트를 생성 후 발급받은 `Project Key`를 이용하여 SDK 연동을 진행합니다
 
-[프로젝트 키 확인하기](https://imqa-onycom.gitbook.io/imqa-guide/installation/imqa/project-key#project-key-1)
+[프로젝트 키 확인하기](https://docs.imqa.io/imqa-guide/installation/imqa/project-key#project-key-1)
 
 [<img src="https://842389420-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzFyCopc6yAp3UcEYW6la%2Fuploads%2FZCGQMpp55OSw14VeJCBG%2FUntitled.png?alt=media&token=c635d854-7d83-48cc-bf87-56d52924ac7a" width="800"/>](image.png)
 
@@ -121,7 +121,7 @@ IMQA는 성능 데이터를 수집후 수집 주기에 따라 데이터를 전�
 `Mpm Activity`를 통해 수집된 데이터는 `서비스 콘솔`을 통해 확인할 수 있으며
 다음 페이지에서 상세한 설명을 제공하고 있습니다
 
-https://imqa-onycom.gitbook.io/imqa-guide/user-guide/mpm
+https://docs.imqa.io/imqa-guide/user-guide/mpm
 
 ### Crash Activity
 `Crash Activity` 에서는
@@ -138,7 +138,7 @@ https://imqa-onycom.gitbook.io/imqa-guide/user-guide/mpm
 `Crash Activity`를 통해 수집된 데이터는 `서비스 콘솔`을 통해 확인할 수 있으며
 다음 페이지에서 상세한 설명을 제공하고 있습니다
 
-https://imqa-onycom.gitbook.io/imqa-guide/user-guide/crash
+https://docs.imqa.io/imqa-guide/user-guide/crash
 
 
 
@@ -150,7 +150,7 @@ https://imqa-onycom.gitbook.io/imqa-guide/user-guide/crash
 
 `IMQA Webview Agent`는 앱이 아닌 웹 페이지에 js파일을 삽입해야 하며, 자세한 설치 가이드는 다음 문서에 있습니다
 
-https://imqa-onycom.gitbook.io/imqa-guide/installation/aos-sdk/mpm-sdk-setting/mpm-webview-guide
+https://docs.imqa.io/imqa-guide/installation/aos-sdk/mpm-sdk-setting/mpm-webview-guide
 
 
 ### Setting Activity
@@ -161,7 +161,7 @@ https://imqa-onycom.gitbook.io/imqa-guide/installation/aos-sdk/mpm-sdk-setting/m
 
 
 ## Release Note
-[릴리즈 노트 페이지](https://imqa-onycom.gitbook.io/imqa-guide/release-note/update)
+[릴리즈 노트 페이지](https://docs.imqa.io/imqa-guide/release-note/update)
 
 
 ## IMQA 포럼
